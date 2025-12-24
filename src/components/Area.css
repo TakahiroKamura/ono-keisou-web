@@ -1,0 +1,94 @@
+.area {
+    padding: 5rem 2rem;
+    background-color: #ffffff;
+}
+
+.area-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.area-main {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #2563eb;
+}
+
+.area-main h3 {
+    font-size: 1.5rem;
+    color: #1e40af;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.area-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.area-list li {
+    padding: 0.75rem 0;
+    color: #1f2937;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(37, 99, 235, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.area-list li:before {
+    content: '✓';
+    color: #2563eb;
+    font-weight: bold;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.area-list li:last-child {
+    border-bottom: none;
+}
+
+.area-note {
+    background: #fef3c7;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid #f59e0b;
+}
+
+.area-note p {
+    color: #78350f;
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+}
+
+.area-note p:last-child {
+    margin-bottom: 0;
+}
+
+.area-note strong {
+    color: #92400e;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .area {
+        padding: 3rem 1rem;
+    }
+
+    .area-main,
+    .area-note {
+        padding: 1.5rem;
+    }
+
+    .area-main h3 {
+        font-size: 1.3rem;
+    }
+
+    .area-list li {
+        font-size: 1rem;
+    }
+}

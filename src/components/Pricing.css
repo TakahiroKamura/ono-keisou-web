@@ -1,0 +1,139 @@
+.pricing {
+    padding: 5rem 2rem;
+    background-color: #f9fafb;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.pricing-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    text-align: center;
+}
+
+.pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.pricing-card.highlighted {
+    border: 2px solid #2563eb;
+    transform: scale(1.05);
+}
+
+.pricing-card.highlighted:hover {
+    transform: scale(1.05) translateY(-4px);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: white;
+    padding: 0.4rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.pricing-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.pricing-price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-description {
+    color: #6b7280;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.pricing-features li {
+    padding: 0.75rem 0;
+    color: #4b5563;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-features li:before {
+    content: '✓';
+    color: #10b981;
+    font-weight: bold;
+    margin-right: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-note {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background: #fef9e7;
+    border-radius: 12px;
+    border: 1px solid #fbbf24;
+}
+
+.pricing-note p {
+    color: #78350f;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.pricing-note p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .pricing {
+        padding: 3rem 1rem;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .pricing-card.highlighted {
+        transform: scale(1);
+    }
+
+    .pricing-card.highlighted:hover {
+        transform: translateY(-4px);
+    }
+
+    .pricing-price {
+        font-size: 2rem;
+    }
+}
